@@ -1,0 +1,48 @@
+.item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 7px;
+  .title {
+    padding: 3px 13px;
+    border-bottom: 1px solid;
+  }
+  .number {
+    background: green;
+    padding: 3px 13px;
+    border-bottom: 1px solid;
+  }
+  .status {
+    background: cornsilk;
+    padding: 3px 13px;
+    border-bottom: 1px solid;
+  }
+  .description {
+    padding: 3px 13px;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .sign {
+    position: absolute;
+    height: 26px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 3px 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #fff;
+    border-radius: 5px;
+    .tag {
+      display: inline-block;
+      padding: 2px 3px;
+      border-radius: 2px;
+      background: #ef9d35;
+      margin-right: 5px;
+    }
+  }
+}

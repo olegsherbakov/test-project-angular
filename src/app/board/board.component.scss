@@ -1,0 +1,31 @@
+.board {
+  display: flex;
+  width: 1300px;
+  min-height: 600px;
+}
+
+.column {
+  position: relative;
+  width: 210px;
+  min-height: 600px;
+  .status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-style: italic;
+    height: 24px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .list {
+    padding-top: 24px;
+    height: 100%;
+    cursor: default !important;
+  }
+}
+
+.hover {
+  background: #f3f1f1;
+}

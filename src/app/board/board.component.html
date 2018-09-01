@@ -1,0 +1,24 @@
+<div class="board">
+  <div
+    *ngFor="let panel of panels"
+    class="column"
+  >
+    <div
+      class="list"
+      [allowDrop]="allowDropFunction(panel.status)"
+      (onDragOver)="onDragOver($event)"
+      (onDragLeave)="onDragLeave($event)"
+      (onDropSuccess)="moveElement($event)"
+      dnd-droppable
+    >
+      <app-card *ngFor="let card of panel.elements" [data]="card"></app-card>
+    </div>
+    <div class="status">
+      {{panel.title}} ({{panel.elements.length}})
+    </div>
+  </div>
+</div>
+<app-modal id="custom-modal">
+  <h1>A Custom Modal!</h1>
+  <button (click)="closeModal('custom-modal');">Close</button>
+</app-modal>
