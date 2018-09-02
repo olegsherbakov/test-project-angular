@@ -1,24 +1,24 @@
 <div
-  *ngIf="data"
+  *ngIf="card"
   class="item"
   dnd-draggable
   (click)="openModal($event)"
-  [dragEnabled]="!isStatic && (data.status != 'done')"
-  [dragData]="data"
+  [dragEnabled]="!isStatic && (card.status != 'done')"
+  [dragData]="card"
 >
   <div class="title">
-    <a href="#" class="title-link">{{data.title}}</a>
+    <a href="#" class="title-link">{{card.title}}</a>
   </div>
   <div class="number">
-    № {{data.id}}
+    № {{card.id}}
   </div>
   <div class="status">
-    {{data.state}}
+    {{card.state}}
   </div>
   <div class="description">
-    {{data.description}}
+    {{card.description}}
   </div>
   <div class="sign">
-    <span *ngFor="let tag of data.tags" class="tag">{{tag}}</span>
+    <span *ngFor="let tag of card.tags" class="tag">{{tag}}</span>
   </div>
 </div>

@@ -10,7 +10,7 @@ import { ModalService } from '../services/modal.service';
 })
 export class CardComponent {
 
-  @Input() data: ICard = null;
+  @Input('card') card: ICard;
   @Input() isStatic: boolean;
 
   constructor(private modalService: ModalService) {}
@@ -19,7 +19,7 @@ export class CardComponent {
     $event.preventDefault();
 
     if (!this.isStatic) {
-      this.modalService.open('custom-modal', this.data);
+      this.modalService.open('custom-modal', this.card);
     }
   }
 }

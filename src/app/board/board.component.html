@@ -5,13 +5,16 @@
   >
     <div
       class="list"
-      [allowDrop]="allowDropFunction(panel.status)"
       (onDragOver)="onDragOver($event)"
       (onDragLeave)="onDragLeave($event)"
       (onDropSuccess)="moveElement($event)"
+      [allowDrop]="allowDropFunction(panel.status)"
       dnd-droppable
     >
-      <app-card *ngFor="let card of panel.elements" [data]="card"></app-card>
+      <app-card
+        *ngFor="let card of panel.elements"
+        [card]="card"
+      ></app-card>
     </div>
     <div class="status">
       {{panel.title}} ({{panel.elements.length}})

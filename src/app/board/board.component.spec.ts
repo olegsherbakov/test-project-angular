@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { BoardComponent } from './board.component';
+import { CardComponent } from './card/card.component';
+import { ModalComponent } from './modal/modal.component';
 
 describe('BoardComponent', () => {
   let component: BoardComponent;
@@ -8,7 +9,11 @@ describe('BoardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BoardComponent ]
+      declarations: [
+        BoardComponent,
+        CardComponent,
+        ModalComponent
+      ]
     })
     .compileComponents();
   }));
