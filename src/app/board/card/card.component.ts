@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { ICard } from '../global/types';
+import { ICard } from '../definitions/types';
 import { ModalService } from '../services/modal.service';
 
 @Component({
@@ -10,11 +10,10 @@ import { ModalService } from '../services/modal.service';
 })
 export class CardComponent {
 
-  constructor(private modalService: ModalService) {}
-
-  @Input() data: ICard;
-
+  @Input() data: ICard = null;
   @Input() isStatic: boolean;
+
+  constructor(private modalService: ModalService) {}
 
   public openModal($event: any): void {
     $event.preventDefault();

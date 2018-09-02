@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-import { ModalService } from '../services/modal.service';
-import { IPanel, ICard, Statuses } from '../global/types';
-import InitData from '../global/data';
+import { ModalService } from './services/modal.service';
+import { IPanel, ICard, Statuses } from './definitions/types';
+import InitData from './definitions/data';
 
 @Component({
   selector: 'app-board',
@@ -15,6 +15,7 @@ export class BoardComponent {
   private _rulesMap: { [key: string]: string } = {};
 
   constructor(private modalService: ModalService) {
+
     // init boards
     this.panels.push({
       status: 'open',
@@ -58,7 +59,7 @@ export class BoardComponent {
 
   public allowDropFunction(status: string): any {
     return (dragData: any) => {
-      return this._rulesMap[dragData.status] === status;
+      return dragData && (this._rulesMap[dragData.status] === status);
     };
   }
 

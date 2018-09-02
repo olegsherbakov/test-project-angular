@@ -1,7 +1,7 @@
 import { Component, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
 
 import { ModalService } from '../services/modal.service';
-import { ICard } from '../global/types';
+import { ICard } from '../definitions/types';
 
 @Component({
   selector: 'app-modal',
@@ -9,6 +9,7 @@ import { ICard } from '../global/types';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit, OnDestroy {
+
   @Input() id: string;
   @Input() card: ICard;
   private element: any;
@@ -49,7 +50,6 @@ export class ModalComponent implements OnInit, OnDestroy {
   // open modal
   public open(card: ICard): void {
     this.element.style.display = 'block';
-    // document.body.classList.add('app-modal-open');
     document.body.style.overflow = 'hidden';
     this.card = card;
   }
@@ -57,7 +57,6 @@ export class ModalComponent implements OnInit, OnDestroy {
   // close modal
   public close(): void {
     this.element.style.display = 'none';
-    // document.body.classList.remove('app-modal-open');
     document.body.style.overflow = 'inherit';
     this.card = null;
   }
