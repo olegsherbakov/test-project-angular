@@ -2,6 +2,12 @@ import { TestBed, async } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { AppComponent } from './app.component';
 
+@Component({
+  selector: 'app-board',
+  template: ''
+})
+class BoardComponent {}
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -28,9 +34,3 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain('Board App');
   }));
 });
-
-@Component({
-  selector: 'app-board',
-  template: ''
-})
-class BoardComponent {}
