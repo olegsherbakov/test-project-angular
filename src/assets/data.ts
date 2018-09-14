@@ -1,5 +1,5 @@
-import { ICard } from '../app/board/definitions/interfaces'
-import { TStatus } from '../app/board/definitions/types'
+import { ICard } from '../app/definitions/interfaces'
+import { TStatus } from '../app/definitions/types'
 
 export const statuses: TStatus[] = [
   'open',

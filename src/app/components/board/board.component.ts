@@ -1,8 +1,8 @@
 import { Component } from '@angular/core'
 
-import { ModalService } from '../services/modal.service'
-import { IPanel } from './definitions/interfaces'
-import { statuses, boards, cards } from '../../assets/data'
+import { ModalService } from '../../services/modal.service'
+import { IPanel } from '../../definitions/interfaces'
+import { statuses, boards, cards } from '../../../assets/data'
 
 @Component({
   selector: 'app-board',

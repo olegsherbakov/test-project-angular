@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common'
 import { DndModule } from 'ng2-dnd'
 
 import { BoardComponent } from './board.component'
-import { CardComponent } from './card/card.component'
+import { CardComponent } from '../card/card.component'
 
 @NgModule({
   imports: [CommonModule, DndModule.forRoot()],
