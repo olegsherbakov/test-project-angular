@@ -6,10 +6,7 @@ import { BoardModule } from './board/board.module'
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    BoardModule,
-  ],
+  imports: [BrowserModule, BoardModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
