@@ -3,7 +3,6 @@
   width: 1300px;
   min-height: 600px;
 }
-
 .column {
   position: relative;
   width: 210px;
@@ -13,19 +12,17 @@
     left: 0;
     top: 0;
     font-weight: bold;
-    font-style: italic;
     height: 24px;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
   }
   .list {
-    padding-top: 24px;
+    padding-top: 30px;
     height: 100%;
     cursor: default !important;
   }
 }
-
 .hover {
   background: #f3f1f1;
 }

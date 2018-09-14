@@ -13,32 +13,32 @@ export const statuses: TStatus[] = [
 export const boards = [
   {
     status: <TStatus>'open',
-    title: 'Согласование',
+    title: 'Discussion',
     elements: new Array<ICard>(),
   },
   {
     status: <TStatus>'pending',
-    title: 'В ожидании',
+    title: 'Pending',
     elements: new Array<ICard>(),
   },
   {
     status: <TStatus>'dev',
-    title: 'Разработка',
+    title: 'Developing',
     elements: new Array<ICard>(),
   },
   {
     status: <TStatus>'test',
-    title: 'Тестирование',
+    title: 'Testing',
     elements: new Array<ICard>(),
   },
   {
     status: <TStatus>'qa',
-    title: 'Корректировка',
+    title: 'Correct',
     elements: new Array<ICard>(),
   },
   {
     status: <TStatus>'done',
-    title: 'Готово',
+    title: 'Done',
     elements: new Array<ICard>(),
   },
 ]
@@ -48,27 +48,27 @@ export const cards = [
     id: 1,
     title: 'Card #1',
     state: 'new',
-    status: 'open',
+    status: <TStatus>'open',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['С.М.'],
+    tags: ['tag#1'],
   },
   <ICard>{
     id: 2,
     title: 'Card #2',
     state: 'error',
-    status: 'open',
+    status: <TStatus>'open',
     description:
       'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    tags: ['С.М.'],
+    tags: ['tag#1'],
   },
   <ICard>{
     id: 3,
     title: 'Card #3',
     state: 'error',
-    status: 'open',
+    status: <TStatus>'open',
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    tags: ['С.М.', 'Б.Е.'],
+    tags: ['tag#5', 'to match long tag #77567567'],
   },
 ]

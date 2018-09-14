@@ -9,22 +9,19 @@
   .title {
     padding: 3px 13px;
     border-bottom: 1px solid;
-  }
-  .number {
-    background: green;
-    padding: 3px 13px;
-    border-bottom: 1px solid;
+    .title-link {
+      color: blue;
+      cursor: pointer;
+    }
   }
   .status {
-    background: cornsilk;
+    background: silver;
     padding: 3px 13px;
-    border-bottom: 1px solid;
   }
   .description {
     padding: 3px 13px;
     height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
   }
   .sign {
     position: absolute;
@@ -32,17 +29,19 @@
     width: 100%;
     bottom: 0;
     left: 0;
-    padding: 0 13px;
+    border-left: 13px solid #fff;
+    border-right: 13px solid #fff;
     overflow: hidden;
-    white-space: nowrap;
-    background: #fff;
     border-radius: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     .tag {
       display: inline-block;
-      padding: 0 3px;
-      border-radius: 2px;
-      background: #ef9d35;
-      margin-right: 5px;
+      border-left: 3px solid lavender;
+      border-right: 3px solid lavender;
+      border-radius: 3px;
+      background: lavender;
+      margin-right: 3px;
     }
   }
 }
