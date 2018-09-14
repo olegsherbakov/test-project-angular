@@ -5,4 +5,13 @@
   width: 1300px;
   margin: 0 auto;
   overflow: hidden;
+  padding: 0 13px;
+  position: relative;
+}
+.repeat {
+  text-decoration: underline;
+  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  right: 25px;
 }

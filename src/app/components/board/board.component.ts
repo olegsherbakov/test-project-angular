@@ -1,6 +1,6 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 
-import { ModalService } from '../../services/modal.service'
+import { ControlService } from '../../services/control.service'
 import { IPanel } from '../../definitions/interfaces'
 import { statuses, boards, cards } from '../../../assets/data'
 
@@ -10,10 +10,12 @@ import { statuses, boards, cards } from '../../../assets/data'
   styleUrls: ['./board.component.scss'],
 })
 export class BoardComponent {
+  @Input()
+  repeatHook: Function
   public panels: IPanel[] = new Array<IPanel>()
   private _rulesMap: { [key: string]: string } = {}
 
-  constructor(private modalService: ModalService) {
+  constructor(private controlService: ControlService) {
     // init boards
     this.panels.push(...boards)
 
@@ -24,6 +26,20 @@ export class BoardComponent {
     statuses.forEach((status, index) => {
       this._rulesMap[status] =
         index === statuses.length - 1 ? statuses[0] : statuses[index + 1]
+    })
+
+    controlService.subscribe({
+      repeat: () => {
+        // clear panels
+        for (let i = 0; i < this.panels.length; i++) {
+          while (this.panels[i].elements.length) {
+            this.panels[i].elements.pop()
+          }
+        }
+
+        // init first
+        cards.forEach(card => this.panels[0].elements.push(card))
+      },
     })
   }
 
