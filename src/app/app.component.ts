@@ -12,7 +12,7 @@ export class AppComponent {
 
   constructor(private controlService: ControlService) {}
 
-  private repeat(): void {
+  public repeat(): void {
     this.controlService.send('repeat')
   }
 }
