@@ -3,7 +3,7 @@
   class="item"
   dnd-draggable
   (click)="openModal($event)"
-  [dragEnabled]="!isStatic && (card.status != 'done')"
+  [dragEnabled]="card.status != 'done'"
   [dragData]="card"
 >
   <div class="title">

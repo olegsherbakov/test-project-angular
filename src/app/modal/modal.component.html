@@ -1,0 +1,15 @@
+<div class="app-modal-container">
+  <div class="app-modal">
+    <div *ngIf="card" class="app-modal-body">
+      <h1>{{ card.title }}</h1>
+      <p>
+        <b>Status:</b> {{ card.status }}
+      </p>
+      <p>
+        <b>Description:</b> {{ card.description }}
+      </p>
+      <button (click)="close();">Close</button>
+    </div>
+  </div>
+</div>
+<div class="app-modal-background"></div>

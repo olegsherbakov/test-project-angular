@@ -1,7 +1,7 @@
 import { Component, ElementRef, Input, OnInit, OnDestroy } from '@angular/core'
 
 import { ModalService } from '../services/modal.service'
-import { ICard } from '../definitions/interfaces'
+import { ICard } from '../board/definitions/interfaces'
 
 @Component({
   selector: 'app-modal',

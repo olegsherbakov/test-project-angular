@@ -21,12 +21,12 @@
     .app-modal-body {
       padding: 20px;
       background: #fff;
-
       width: 500px;
+      min-height: 250px;
       position: relative;
       left: 50%;
-      margin-left: -250px;
-      margin-top: 40px;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

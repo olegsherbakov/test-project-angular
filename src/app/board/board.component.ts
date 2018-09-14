@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 
-import { ModalService } from './services/modal.service'
+import { ModalService } from '../services/modal.service'
 import { IPanel } from './definitions/interfaces'
 import { statuses, boards, cards } from '../../assets/data'
 
@@ -63,9 +63,5 @@ export class BoardComponent {
 
   public onDragLeave($event): void {
     $event.mouseEvent.target.classList.remove('hover')
-  }
-
-  public closeModal(id: string): void {
-    this.modalService.close(id)
   }
 }
