@@ -3,6 +3,9 @@
     *ngFor="let panel of panels"
     class="column"
   >
+    <div class="status">
+      {{panel.title}} ({{panel.elements.length}})
+    </div>
     <div
       class="list"
       (onDragOver)="onDragOver($event)"
@@ -15,9 +18,6 @@
         *ngFor="let card of panel.elements"
         [card]="card"
       ></app-card>
-    </div>
-    <div class="status">
-      {{panel.title}} ({{panel.elements.length}})
     </div>
   </div>
 </div>

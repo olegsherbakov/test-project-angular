@@ -1,5 +1,11 @@
+.root-container {
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+}
 .flex-container {
   flex: 1 0 auto;
+  min-width: 1300px;
 }
 .content {
   width: 1300px;
@@ -12,6 +18,6 @@
   text-decoration: underline;
   cursor: pointer;
   position: absolute;
-  top: 21px;
   right: 25px;
+  top: 21px;
 }

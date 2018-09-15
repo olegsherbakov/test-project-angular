@@ -8,7 +8,7 @@ import { ControlService } from './services/control.service'
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public title = 'DnD Board Simple Example'
+  public title = 'DnD Agile Board Simple Example'
 
   constructor(private controlService: ControlService) {}
 

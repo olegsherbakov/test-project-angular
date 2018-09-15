@@ -4,25 +4,21 @@
   min-height: 600px;
 }
 .column {
-  position: relative;
   width: 210px;
-  min-height: 600px;
-  .status {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-weight: bold;
-    height: 24px;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .list {
-    padding-top: 30px;
-    height: 100%;
-    cursor: default !important;
-  }
+  padding-right: 10px;
+}
+.status {
+  margin-bottom: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list {
+  cursor: default !important;
+  min-height: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hover {
-  background: #f3f1f1;
+  background: #bbb;
 }

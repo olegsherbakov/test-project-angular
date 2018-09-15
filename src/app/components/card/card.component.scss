@@ -1,6 +1,5 @@
 .item {
   position: relative;
-  width: 200px;
   height: 200px;
   border: 1px solid;
   border-radius: 5px;
@@ -37,10 +36,10 @@
     text-overflow: ellipsis;
     .tag {
       display: inline-block;
-      border-left: 3px solid lavender;
-      border-right: 3px solid lavender;
+      border-left: 3px solid #eee;
+      border-right: 3px solid #eee;
       border-radius: 3px;
-      background: lavender;
+      background: #eee;
       margin-right: 3px;
       color: #777;
     }
