@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-
-import { CardComponent } from './card.component'
+import { DraggableComponent, DroppableComponent, DragDropConfig, DragDropService } from 'ng2-dnd'
+import { CardComponent } from '@components/card/card.component'
 
 describe('CardComponent', () => {
   let component: CardComponent
@@ -8,7 +8,8 @@ describe('CardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [CardComponent],
+      declarations: [CardComponent, DraggableComponent, DroppableComponent],
+      providers: [DragDropConfig, DragDropService],
     }).compileComponents()
   }))
 
