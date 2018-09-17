@@ -9,6 +9,6 @@ import { ModalComponent } from '@components/modal/modal.component'
 @NgModule({
   declarations: [AppComponent, BoardComponent, CardComponent, ModalComponent],
   imports: [BrowserModule, DndModule.forRoot()],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, ModalComponent],
 })
 export class AppModule {}

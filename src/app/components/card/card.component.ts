@@ -8,14 +8,14 @@ import { ModalService } from '@services/modal.service'
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  @Input('card')
-  card: ICard
+  @Input()
+  private card: ICard
 
   constructor(private modalService: ModalService) {}
 
   public openModal($event: any): void {
     $event.preventDefault()
 
-    this.modalService.open('custom-modal', this.card)
+    this.modalService.open(this.card)
   }
 }

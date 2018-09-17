@@ -10,8 +10,7 @@ import { statuses, boards, cards } from '@assets/data'
 })
 export class BoardComponent {
   @Input()
-  repeatHook: Function
-  public panels: IPanel[] = new Array<IPanel>()
+  private panels: IPanel[] = new Array<IPanel>()
   private _rulesMap: { [key: string]: string } = {}
 
   constructor(private controlService: ControlService) {

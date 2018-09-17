@@ -1,6 +1,6 @@
-<div class="app-modal-container">
+<div *ngIf="card" class="app-modal-container">
   <div class="app-modal">
-    <div *ngIf="card" class="app-modal-body">
+    <div class="app-modal-body">
       <h1>{{ card.title }}</h1>
       <p>
         <b>Status:</b> {{ card.status }}
