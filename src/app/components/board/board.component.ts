@@ -1,8 +1,7 @@
 import { Component, Input } from '@angular/core'
-
-import { ControlService } from '../../services/control.service'
-import { IPanel } from '../../definitions/interfaces'
-import { statuses, boards, cards } from '../../../assets/data'
+import { ControlService } from '@services/control.service'
+import { IPanel } from '@definitions/interfaces'
+import { statuses, boards, cards } from '@assets/data'
 
 @Component({
   selector: 'app-board',

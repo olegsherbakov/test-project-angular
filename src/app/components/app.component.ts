@@ -1,6 +1,5 @@
 import { Component } from '@angular/core'
-
-import { ControlService } from './services/control.service'
+import { ControlService } from '@services/control.service'
 
 @Component({
   selector: 'app-root',

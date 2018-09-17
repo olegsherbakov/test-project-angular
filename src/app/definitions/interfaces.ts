@@ -1,4 +1,4 @@
-import { TStatus } from './types'
+import { TStatus } from '@definitions/types'
 
 export interface ICard {
   id: number

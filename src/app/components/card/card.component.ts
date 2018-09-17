@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core'
-
-import { ICard } from '../../definitions/interfaces'
-import { ModalService } from '../../services/modal.service'
+import { ICard } from '@definitions/interfaces'
+import { ModalService } from '@services/modal.service'
 
 @Component({
   selector: 'app-card',

@@ -16,6 +16,12 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@components/*": ["src/app/components/*"],
+      "@definitions/*": ["src/app/definitions/*"],
+      "@services/*": ["src/app/services/*"],
+      "@assets/*": ["src/assets/*"]
+    }
   }
 }
