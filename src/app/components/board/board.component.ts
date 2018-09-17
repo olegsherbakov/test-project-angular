@@ -10,7 +10,7 @@ import { statuses, boards, cards } from '@assets/data'
 })
 export class BoardComponent {
   @Input()
-  private panels: IPanel[] = new Array<IPanel>()
+  public panels: IPanel[] = new Array<IPanel>()
   private _rulesMap: { [key: string]: string } = {}
 
   constructor(private controlService: ControlService) {

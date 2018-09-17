@@ -9,7 +9,7 @@ import { ModalService } from '@services/modal.service'
 })
 export class CardComponent {
   @Input()
-  private card: ICard
+  public card: ICard
 
   constructor(private modalService: ModalService) {}
 

@@ -9,7 +9,7 @@ import { ICard } from '@definitions/interfaces'
 })
 export class ModalComponent {
   @Input()
-  private card: ICard
+  public card: ICard
   private element: HTMLElement
 
   constructor(private modalService: ModalService, private el: ElementRef) {
