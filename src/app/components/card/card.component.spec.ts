@@ -1,5 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
-import { DraggableComponent, DroppableComponent, DragDropConfig, DragDropService } from 'ng2-dnd'
+import {
+  DraggableComponent,
+  DroppableComponent,
+  DragDropConfig,
+  DragDropService,
+} from 'ng2-dnd'
 import { CardComponent } from '@components/card/card.component'
 
 describe('CardComponent', () => {
